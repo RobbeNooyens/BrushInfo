@@ -1,0 +1,37 @@
+# Enchant-effect: whether the item gets a sparkle effect or not
+# Hide-flags: whether itemflags should be hidden or not
+# Update-scroll: set to true if players can use '/br scroll' command, set to false to reduce lagg
+# Possible variables:
+#   %brush%: Sphere, Cylinder, Smooth, ...
+#   %hollow%: true/false
+#   %pattern%: materials for brush. 
+#   %mask%: mask materials
+#   %smask%: source mask
+#   %size%: size as integer
+#   %command%: primary command as string
+#   %seccommand%: secondary command as string
+# Commands:
+#   /brushinfo help: shows help page with available commands
+#   /brushinfo info: shows info page + version
+#   /brushinfo refresh: refresh your inventory if your items are bugged
+#     Permission: brushinfo.refresh
+#   /brushinfo reload: reload config
+#     Permission: brushinfo.reload
+#   Permission: brushinfo.toolinfo
+
+itemname: '&3%brush% &b(%size%)'
+lore:
+  - '&7&m-----------------'
+  - '&cBrush: &7%brush%'
+#  - '&cHollow: &7%hollow%'
+  - '&cPattern: &7%pattern%'
+  - '&cMask: &7%mask%'
+  - '&cSource Mask: &7%smask%'
+  - '&cSize: &7%size%'
+  - '&cPrimary: &7//br %command%'
+  - '&cSecondary: &7//br %seccommand%'
+  - '&7&m-----------------'
+enchant-effect: true
+hide-flags: true
+update-scroll: false
+config-reloaded: '&3[BrushInfo] &2Config has been reloaded'

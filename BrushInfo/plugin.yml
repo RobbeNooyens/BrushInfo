@@ -1,0 +1,12 @@
+name: BrushInfo
+version: 1.12.2.32
+description: WorldEdit expansion for brushes
+author: Robnoo02
+api-version: 1.12
+main: me.robnoo02.brushinfo.Main
+depend: [WorldEdit]
+
+commands:
+  brushinfo:
+    usage: /<command>
+    description: Main cmd
